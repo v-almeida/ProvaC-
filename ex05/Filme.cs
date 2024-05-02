@@ -12,7 +12,7 @@ public class Filme {
     public decimal Duracao {get; set;}
     public int Disponivel {get; private set;}
 
-    public Filme (string titulo, string genero, decimal duracao, string disponivel){
+    public Filme (string titulo, string genero, decimal duracao, int disponivel){
 
         Titulo = titulo;
         Genero = genero;
@@ -25,11 +25,11 @@ public class Filme {
 
         if (quantidade > 0){
             Disponivel = Disponivel + quantidade;
-            Console.WriteLine($"Filme {Titulo} devolvido. Disponiveis: {Disponivel}")
+            Console.WriteLine($"Filme {Titulo} devolvido. Disponiveis: {Disponivel}");
         }
         else{
 
-            Console.WriteLine("Para devolver o filme, primeiro você precisa ter feito a locação. :)")
+            Console.WriteLine("Para devolver o filme, primeiro você precisa ter feito a locação. :)");
         
             }
 
@@ -43,7 +43,7 @@ public class Filme {
 
         }
         else{
-            Console.WriteLine("Filme não disponível para locação.")
+            Console.WriteLine("Filme não disponível para locação.");
 
             }
     }

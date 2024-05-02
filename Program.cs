@@ -100,22 +100,25 @@ class Program
 {
     static void Main()
     {
-        //Titulo de filme
-        var movie = new Filme("Kill bill", "Ação" , 1.45m, 4);
 
-        // Locação
-        Console.WriteLine("Locação: ");
-        int quantidadeLocacao = int.Parse(Console.ReadLine());
+        var movie = new Filme("Kill Bill", "Ação", 1.45m, 4);
+        Console.WriteLine($"Filme: {movie.Titulo}");
+        Console.WriteLine($"Genero: {movie.Genero}");
+        Console.WriteLine($"Duracao: {movie.Duracao}");
+        Console.WriteLine($"Disponível para locação: {movie.Disponivel}");
 
-        movie.LocarFilme(quantidadeLocacao);
+        movie.LocarFilme(1);
+        movie.DevolverFilme(1);
 
-        Console.WriteLine($"Filme {movie.Titulo} disponível? {movie.DisponibilidadeFilme()}");
+        if (movie.DisponibilidadeFilme()){
 
-        Console.ReadLine();
-
-        
-
-
+            Console.WriteLine($"Filme {movie.Titulo} Disponível para locação.");
+        } else {
+            Console.WriteLine($"Filme {movie.Titulo} não está disponível para locação.");
+        }
     }
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 

@@ -12,3 +12,4 @@ C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\obj\Debug\net8.0\refint\P
 C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\obj\Debug\net8.0\Projeto-Csharp.pdb
 C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\obj\Debug\net8.0\Projeto-Csharp.genruntimeconfig.cache
 C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\obj\Debug\net8.0\ref\Projeto-Csharp.dll
+C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\obj\Debug\net8.0\Projeto-Csharp.sourcelink.json
