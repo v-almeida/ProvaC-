@@ -1,0 +1,24 @@
+Utilizei a correção do bing copilot, estava com problemas apenas no Program, eu consegui atribuir os métodos e classes conforme suas aulas anteriores,
+mas para fazer aparecer na tela, precisei de auxílio dessa IA para isso.
+
+IA MICROSOFT BING COPILIOT:
+
+C#
+class Program
+{
+    static void Main()
+    {
+        var gerente1 = new gerente
+        {
+            nome = "Ana",
+            salario = 30000,
+            gerencia = "Vendas",
+            cargo = "Gerente de Vendas"
+        };
+
+        Console.WriteLine(gerente1.tipoDepartamento());
+        Console.WriteLine($"Nome: {gerente1.nome}");
+        Console.WriteLine($"Salário: {gerente1.salario}");
+        Console.WriteLine($"Cargo: {gerente1.cargo}");
+    }
+}

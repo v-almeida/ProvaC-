@@ -1,0 +1,8 @@
+3.	Diferencie sobrecarga e sobreposição (ou sobrescrita) e forneça exemplos de cada um em C#.
+
+Resposta: Começando por Sobrescrita ou OVERRIDING, o override ocorre quando uma sublasse possui um método único, ou seja,
+é realizada uma redefinição do que foi imposto pela superclasse ou classe base.
+
+Sobrecarga ou OVERLOADING, é quando existem métodos que possuem o mesmo nome dentro de uma classe, ou seja, a sobrecarga serve para você não ter que criar outra classe para poder
+definir outra versão deste mesmo método.
+

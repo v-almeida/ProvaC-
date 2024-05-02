@@ -1,0 +1,57 @@
+Microsoft bing copilot
+
+
+using System;
+
+public class Produto
+{
+    public string Nome { get; set; }
+    public decimal Preco { get; set; }
+    public int QuantidadeEmEstoque { get; private set; }
+
+    public Produto(string nome, decimal preco, int quantidadeEmEstoque)
+    {
+        Nome = nome;
+        Preco = preco;
+        QuantidadeEmEstoque = quantidadeEmEstoque;
+    }
+
+    public void AdicionarEstoque(int quantidade)
+    {
+        if (quantidade > 0)
+            QuantidadeEmEstoque += quantidade;
+        else
+            Console.WriteLine("Quantidade inválida. Não foi possível adicionar ao estoque.");
+    }
+
+    public void RemoverEstoque(int quantidade)
+    {
+        if (quantidade > 0 && quantidade <= QuantidadeEmEstoque)
+            QuantidadeEmEstoque -= quantidade;
+        else
+            Console.WriteLine("Quantidade inválida ou insuficiente. Não foi possível remover do estoque.");
+    }
+
+    public decimal CalcularValorTotalEmEstoque()
+    {
+        return Preco * QuantidadeEmEstoque;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Exemplo de uso
+        var produto1 = new Produto("Camiseta", 29.99m, 50);
+        Console.WriteLine($"Produto: {produto1.Nome}");
+        Console.WriteLine($"Preço: R${produto1.Preco}");
+        Console.WriteLine($"Quantidade em estoque: {produto1.QuantidadeEmEstoque}");
+        Console.WriteLine($"Valor total em estoque: R${produto1.CalcularValorTotalEmEstoque()}");
+
+        // Adicionando e removendo do estoque
+        produto1.AdicionarEstoque(10);
+        produto1.RemoverEstoque(5);
+        Console.WriteLine($"Quantidade em estoque após operações: {produto1.QuantidadeEmEstoque}");
+    }
+}

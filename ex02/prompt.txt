@@ -1,0 +1,18 @@
+Via microsoft bing.
+
+Foi pedido para revisar o meu código e chegou a no program:
+
+
+MICROSOFT BING COPILOT
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        var cartao = new CartaoCredito();
+        double precoProduto = 100.0;
+        double valorPago = cartao.PagarOnline(precoProduto);
+
+        Console.WriteLine($"Valor pago com cartão de crédito: R${valorPago:F2}");
+    }
+}

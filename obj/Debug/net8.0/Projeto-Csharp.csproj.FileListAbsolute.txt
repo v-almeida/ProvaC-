@@ -1,0 +1,14 @@
+C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\obj\Debug\net8.0\Projeto-Csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\obj\Debug\net8.0\Projeto-Csharp.AssemblyInfoInputs.cache
+C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\obj\Debug\net8.0\Projeto-Csharp.AssemblyInfo.cs
+C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\obj\Debug\net8.0\Projeto-Csharp.csproj.CoreCompileInputs.cache
+C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\bin\Debug\net8.0\Projeto-Csharp.exe
+C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\bin\Debug\net8.0\Projeto-Csharp.deps.json
+C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\bin\Debug\net8.0\Projeto-Csharp.runtimeconfig.json
+C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\bin\Debug\net8.0\Projeto-Csharp.dll
+C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\bin\Debug\net8.0\Projeto-Csharp.pdb
+C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\obj\Debug\net8.0\Projeto-Csharp.dll
+C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\obj\Debug\net8.0\refint\Projeto-Csharp.dll
+C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\obj\Debug\net8.0\Projeto-Csharp.pdb
+C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\obj\Debug\net8.0\Projeto-Csharp.genruntimeconfig.cache
+C:\Users\witha\Documents\Projeto-Csharp\Projeto-Csharp\obj\Debug\net8.0\ref\Projeto-Csharp.dll
