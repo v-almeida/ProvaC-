@@ -96,7 +96,7 @@ Console.WriteLine(Tucano.somEmitido()); */
 
 //EXERCICIO 05
 
-class Program
+/* class Program
 {
     static void Main()
     {
@@ -117,8 +117,53 @@ class Program
             Console.WriteLine($"Filme {movie.Titulo} não está disponível para locação.");
         }
     }
-}
+} */
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// EXERCICIO 06
 
+//CARRO
+
+/* Carro carro = new Carro();
+carro.Ano = "2018";
+carro.Placa = "RGM36113620";
+carro.NumeroDePortas = 4;
+carro.Modelo = "Onix";
+carro.Marca = "Chevrolet";
+Console.WriteLine("Ano: " + carro.Ano);
+Console.WriteLine("Placa: " + carro.Placa);
+Console.WriteLine("Numero de portas: " + carro.NumeroDePortas);
+Console.WriteLine("Modelo: " + carro.Modelo);
+Console.WriteLine("Marca do Carro: " + carro.Marca); */
+
+//MOTO
+
+/* Moto moto = new Moto();
+moto.Ano = "2018";
+moto.Placa = "RGM36113620";
+moto.QuantidadeCilindrada = 400;
+moto.Modelo = "kawasaki";
+moto.Marca = "kawasaki";
+Console.WriteLine("Ano: " + moto.Ano);
+Console.WriteLine("Placa: " + moto.Placa);
+Console.WriteLine("Numero de cilindradas: " + moto.QuantidadeCilindrada);
+Console.WriteLine("Modelo: " + moto.Modelo);
+Console.WriteLine("Marca do moto: " + moto.Marca); */
+
+// BICICLETA
+
+Bicicleta bicicleta = new Bicicleta();
+bicicleta.Ano = "2018";
+bicicleta.QuantidadeMarcha = 21;
+bicicleta.Modelo = "BMX";
+bicicleta.Marca = "Colli Bikes";
+Console.WriteLine("Ano: " + bicicleta.Ano);
+Console.WriteLine("Numero de marchas: " + bicicleta.QuantidadeMarcha);
+Console.WriteLine("Modelo: " + bicicleta.Modelo);
+Console.WriteLine("Marca da bike: " + bicicleta.Marca);
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//EXERCICIO 07

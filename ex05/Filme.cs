@@ -5,7 +5,7 @@ Crie uma classe Filme com os seguintes atributos: Titulo, Genero, Duracao, Dispo
 Implemente métodos para registrar a locação de um filme, registrar a devolução de um filme e verificar se um filme está disponível para locação. 
 Não há necessidade de implementar rotinas de bancos de dados.*/
 
-public class Filme {
+/* public class Filme {
 
     public string Titulo {get; set;}
     public string Genero {get; set;}
@@ -53,4 +53,4 @@ public class Filme {
         return Disponivel > 0;
     }
 
-}
+} */
