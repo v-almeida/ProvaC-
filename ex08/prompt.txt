@@ -1,0 +1,55 @@
+Microsoft bing copilot
+
+using System;
+
+public class CursoIdiomas
+{
+    public double Nota1 { get; set; }
+    public double Nota2 { get; set; }
+    public double Pagamento { get; set; }
+    public string Curso { get; set; }
+
+    public CursoIdiomas(double nota1, double nota2, double pagamento, string curso)
+    {
+        Nota1 = nota1;
+        Nota2 = nota2;
+        Pagamento = pagamento;
+        Curso = curso;
+    }
+
+    public double CalcularMedia()
+    {
+        return (Nota1 + Nota2) / 2;
+    }
+
+    public virtual string GerarCertificado()
+    {
+        return "Certificado de Conclusão";
+    }
+}
+
+public class CursoAvancado : CursoIdiomas
+{
+    public CursoAvancado(double nota1, double nota2, double pagamento, string curso)
+        : base(nota1, nota2, pagamento, curso)
+    {
+        // Inicialização específica para cursos avançados
+    }
+
+    public override string GerarCertificado()
+    {
+        return "Certificado Avançado";
+    }
+}
+
+// Exemplo de uso:
+public class Program
+{
+    public static void Main()
+    {
+        var cursoIngles = new CursoAvancado(nota1: 8.5, nota2: 9.0, pagamento: 500.0, curso: "Inglês");
+        Console.WriteLine($"Curso: {cursoIngles.Curso}");
+        Console.WriteLine($"Média de Notas: {cursoIngles.CalcularMedia()}");
+        Console.WriteLine($"Certificado: {cursoIngles.GerarCertificado()}");
+    }
+}
