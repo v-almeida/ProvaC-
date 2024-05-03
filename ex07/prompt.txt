@@ -1,0 +1,75 @@
+Microsoft bing copilot
+
+using System;
+
+public class ContaBancaria
+{
+    public string Tipo { get; set; }
+    public double Saldo { get; set; }
+
+    public ContaBancaria(string tipo, double saldo)
+    {
+        Tipo = tipo;
+        Saldo = saldo;
+    }
+
+    public virtual void Sacar(double valor)
+    {
+        if (valor <= Saldo)
+            Saldo -= valor;
+        else
+            Console.WriteLine("Saldo insuficiente para saque.");
+    }
+
+    public virtual void ExibirSaldo()
+    {
+        Console.WriteLine($"Saldo da conta {Tipo}: R$ {Saldo:F2}");
+    }
+}
+
+public class ContaPoupanca : ContaBancaria
+{
+    public ContaPoupanca(string tipo, double saldo) : base(tipo, saldo)
+    {
+    }
+
+    public void CalcularJuros(double taxa)
+    {
+        double juros = Saldo * (taxa / 100);
+        Saldo += juros;
+        Console.WriteLine($"Juros adicionados à conta {Tipo}: R$ {juros:F2}");
+    }
+}
+
+public class ContaEmpresarial : ContaBancaria
+{
+    public ContaEmpresarial(string tipo, double saldo) : base(tipo, saldo)
+    {
+    }
+
+    public void VerificarSaldoMinimo(double saldoMinimo)
+    {
+        if (Saldo < saldoMinimo)
+            Console.WriteLine($"Saldo da conta {Tipo} abaixo do mínimo permitido.");
+        else
+            Console.WriteLine($"Saldo da conta {Tipo} está dentro do limite.");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        ContaBancaria contaCorrente = new ContaBancaria("Corrente", 1000.0);
+        contaCorrente.Sacar(200.0);
+        contaCorrente.ExibirSaldo();
+
+        ContaPoupanca contaPoupanca = new ContaPoupanca("Poupança", 5000.0);
+        contaPoupanca.CalcularJuros(1.5);
+        contaPoupanca.ExibirSaldo();
+
+        ContaEmpresarial contaEmpresarial = new ContaEmpresarial("Empresarial", 30000.0);
+        contaEmpresarial.VerificarSaldoMinimo(20000.0);
+    }
+}
+

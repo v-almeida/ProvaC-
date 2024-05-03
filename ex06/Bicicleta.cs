@@ -1,7 +1,7 @@
 // ./Bicicleta.cs
 
-public class Bicicleta : Veiculo {
+/* public class Bicicleta : Veiculo {
 
     public int QuantidadeMarcha;
 
-}
+} */

@@ -153,7 +153,7 @@ Console.WriteLine("Marca do moto: " + moto.Marca); */
 
 // BICICLETA
 
-Bicicleta bicicleta = new Bicicleta();
+/* Bicicleta bicicleta = new Bicicleta();
 bicicleta.Ano = "2018";
 bicicleta.QuantidadeMarcha = 21;
 bicicleta.Modelo = "BMX";
@@ -161,9 +161,28 @@ bicicleta.Marca = "Colli Bikes";
 Console.WriteLine("Ano: " + bicicleta.Ano);
 Console.WriteLine("Numero de marchas: " + bicicleta.QuantidadeMarcha);
 Console.WriteLine("Modelo: " + bicicleta.Modelo);
-Console.WriteLine("Marca da bike: " + bicicleta.Marca);
+Console.WriteLine("Marca da bike: " + bicicleta.Marca); */
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //EXERCICIO 07
+
+/* class Program
+{
+    static void Main()
+    {
+        ContaBancaria corrente = new ContaBancaria("Corrente", 1000.0);
+        corrente.Sacar(200.0);
+        corrente.ExibirSaldo();
+
+        Poupanca poupanca = new Poupanca("Poupança", 5000.0);
+        poupanca.CalcularJuros(1.5);
+        poupanca.ExibirSaldo();
+
+        Empresarial empresarial = new Empresarial("Empresarial", 30000.0);
+        empresarial.VerificarSaldoMinimo(20000.0);
+    }
+} */
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
