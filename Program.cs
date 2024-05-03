@@ -203,7 +203,7 @@ Console.WriteLine("Marca da bike: " + bicicleta.Marca); */
 
 // EXERCICIO 09
 
-class Program
+/* class Program
 {
     static void Main()
     {
@@ -221,4 +221,43 @@ class Program
         metodo3.Pagar(valorCompra);
         Console.WriteLine(metodo3.StatusPagamento("Concluída"));
     }
+} */
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//EXERCICIO 10
+
+class Program
+{
+    static void Main()
+    {
+
+        IReserva reserva = new ReservaVooRegular();
+        reserva.ReservarVoo();
+        reserva.VerificarStatusReserva();
+
+        reserva = new ReservaVooComUpgrade();
+        reserva.ReservarVoo();
+        reserva.CancelarReserva();
+
+        reserva = new ReservaVooGrupoGrande();
+        reserva.ReservarVoo();
+    }
 }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
