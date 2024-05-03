@@ -200,3 +200,25 @@ Console.WriteLine("Marca da bike: " + bicicleta.Marca); */
     }
 } */
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// EXERCICIO 09
+
+class Program
+{
+    static void Main()
+    {
+        double valorCompra = 100.0;
+
+        IMetodoPagamento metodo1 = new CartaoCredito();
+        metodo1.Pagar(valorCompra);
+        Console.WriteLine(metodo1.StatusPagamento("Aprovado"));
+
+        IMetodoPagamento metodo2 = new BoletoBancario();
+        metodo2.Pagar(valorCompra);
+        Console.WriteLine(metodo2.StatusPagamento("Pendente"));
+
+        IMetodoPagamento metodo3 = new TransferenciaBancaria();
+        metodo3.Pagar(valorCompra);
+        Console.WriteLine(metodo3.StatusPagamento("Concluída"));
+    }
+}

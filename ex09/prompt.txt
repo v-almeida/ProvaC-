@@ -1,0 +1,80 @@
+Microsoft bing copilot
+
+using System;
+
+public interface IMetodoPagamento
+{
+    double Pagar(double preco);
+    string StatusPagamento(string status);
+}
+
+public class CartaoCredito : IMetodoPagamento
+{
+    public double Pagar(double preco)
+    {
+        // Lógica específica para pagamento com cartão de crédito
+        // Implemente aqui a comunicação com a operadora de cartão
+        Console.WriteLine($"Pagamento com cartão de crédito no valor de R${preco} realizado.");
+        return preco;
+    }
+
+    public string StatusPagamento(string status)
+    {
+        // Lógica para verificar o status do pagamento com cartão
+        return $"Status do pagamento com cartão de crédito: {status}";
+    }
+}
+
+public class BoletoBancario : IMetodoPagamento
+{
+    public double Pagar(double preco)
+    {
+        // Lógica específica para pagamento com boleto bancário
+        // Implemente aqui a geração do boleto e registro no sistema bancário
+        Console.WriteLine($"Boleto bancário gerado no valor de R${preco}.");
+        return preco;
+    }
+
+    public string StatusPagamento(string status)
+    {
+        // Lógica para verificar o status do pagamento via boleto
+        return $"Status do pagamento via boleto bancário: {status}";
+    }
+}
+
+public class TransferenciaBancaria : IMetodoPagamento
+{
+    public double Pagar(double preco)
+    {
+        // Lógica específica para pagamento via transferência bancária
+        // Implemente aqui a comunicação com o banco para efetuar a transferência
+        Console.WriteLine($"Transferência bancária realizada no valor de R${preco}.");
+        return preco;
+    }
+
+    public string StatusPagamento(string status)
+    {
+        // Lógica para verificar o status da transferência bancária
+        return $"Status da transferência bancária: {status}";
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        double valorCompra = 100.0;
+
+        IMetodoPagamento metodo1 = new CartaoCredito();
+        metodo1.Pagar(valorCompra);
+        Console.WriteLine(metodo1.StatusPagamento("Aprovado"));
+
+        IMetodoPagamento metodo2 = new BoletoBancario();
+        metodo2.Pagar(valorCompra);
+        Console.WriteLine(metodo2.StatusPagamento("Pendente"));
+
+        IMetodoPagamento metodo3 = new TransferenciaBancaria();
+        metodo3.Pagar(valorCompra);
+        Console.WriteLine(metodo3.StatusPagamento("Concluída"));
+    }
+}
